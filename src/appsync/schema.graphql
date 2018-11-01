@@ -1,0 +1,19 @@
+type Content implements Entity {
+	id: ID!
+	title: String!
+	# Type: Review, Article etc
+	type: String!
+	text: String
+	image: String
+	path: String
+}
+
+interface Entity {
+	id: ID!
+}
+
+type Query {
+	listContent: [Content!]!
+	getContent(id: ID!): Content
+	getContentByPath(path: String!): Content
+}
