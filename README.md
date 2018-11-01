@@ -8,6 +8,7 @@ It's a demo for creating an AWS AppSync API with a few Lambda functions!
 From within a checkout of this code...
 
 ```
+npm i -G serverless
 yarn
 npm run deploy
 ```
